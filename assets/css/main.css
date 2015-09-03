@@ -163,6 +163,13 @@ hr.small{
           transform: scale(0.9);
 }
 
+.btn-sm{
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 5px 10px;
+}
+
 .form-control {
   border-radius: 0;
   box-shadow: none;
@@ -243,6 +250,12 @@ hr.small{
 /* 
  * 3.4 Helper Class: button
  */
+
+.btn-lg{
+  font-size: 18px;
+  padding: 12px 28px;
+}
+
 .btn-white {
   color: #000;
   background-color: #fff;
@@ -255,8 +268,8 @@ hr.small{
 }
 
 .btn-red:hover, .btn-red:focus  {
-    background-color: #fff;
-    color: #e03e51;
+    background-color: #F7CFD3;
+    color: #FFF;
 }
 
 .btn-white:hover, .btn-white:focus {
@@ -331,7 +344,7 @@ hr.small{
   margin: 0;
 }
 .navbar-custom .navbar-nav > li > a {
-  color: #fff;
+  color: #001e60;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 400;
@@ -356,9 +369,14 @@ hr.small{
 
 .navbar-solid {
   background-color: #001e60 !important;
+  color:#FFF;
   padding: 0 !important;
   -webkit-transition: all 0.2s linear 0s;
           transition: all 0.2s linear 0s;
+}
+
+.navbar-solid .navbar-nav li a{
+  color: #FFF;
 }
 
 .site-branding {
@@ -367,7 +385,7 @@ hr.small{
   margin-left: 10px;
 }
 .site-branding .logo {
-  color: #fff;
+  color: #001e60;
   font-size: 14px;
   font-weight: 700;
   margin-right: 5px;
@@ -395,8 +413,7 @@ hr.small{
   min-height: 100vh;
   position: relative;
   text-align: center;
-//  background: url(../images/backgrounds/header.jpg) no-repeat center center/cover;
-  background: url(http://osfbcn2015staging.ouishare.webfactional.com/assets/slider/new_inspire.jpg) no-repeat center center/cover;
+  background: url(../images/backgrounds/ouisharefestbcn_bg.jpg) no-repeat center center/cover;
 }
 .site-header::before {
   content: "";
@@ -405,7 +422,7 @@ hr.small{
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
 }
 .site-header .intro {
   color: #fff;
@@ -450,6 +467,7 @@ hr.small{
 
 
 .site-header .intro p {
+  color: #001e60;
   font-size: 20px;
   margin-bottom: 10px;
   font-weight: 300;
@@ -580,33 +598,35 @@ hr.small{
   margin: 0;
 }
 
+.hexagon span {
+    position: absolute;
+    display: block;
+    float:left;
+  border-left: 100px solid #fff;
+  border-right: 100px solid #fff;
+}
+
+.hexagon .top {
+top: 0;
+border-top: 0px solid transparent;
+ border-bottom: 60px solid transparent;
+}
+
+.hexagon .bottom{
+bottom: 0px;
+border-bottom: 0px solid transparent;
+border-top: 60px solid transparent;
+}
+
 .hexagon {
-  position: relative;
-  width: 200px; 
-  height: 115.47px;
-  background-color: #DB8187;
-  margin: 57.74px auto;
+    background-position: center center;
+    background-size: 225px; 
+    width: 200px;
+    height: 225px;
+    position: relative;
+    display: inline-block;
 }
 
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-}
-
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 57.74px solid #DB8187;
-}
-
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 57.74px solid #DB8187;
-}
 
 .blue-box{
   background-color: #A990CA;
@@ -681,8 +701,8 @@ hr.small{
 .partner .partner-box {
   display: block;
   opacity: 0.5;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   margin: 10px auto;
   -webkit-transition: 0.5s all linear;
           transition: 0.5s all linear;
@@ -691,9 +711,15 @@ hr.small{
   opacity: 1;
 }
 .partner .partner-box-1 {
-  background: url(../images/partner/freedelibre.png) no-repeat center center/contain;
+  background: url(http://iambarcelonian.barcelonactiva.cat/wp-content/uploads/2014/09/logo-barcelona-activa-300x96.png) no-repeat center center/contain;
 }
 .partner .partner-box-2 {
+  background: url(../images/partner/socialcar.png) no-repeat center center/contain;
+}
+.partner .partner-box-5 {
+  background: url(../images/partner/freedelibre.png) no-repeat center center/contain;
+}
+.partner .partner-box-8 {
   background: url(../images/partner/consumocolaborativo_logo3.png) no-repeat center center/contain;
 }
 .partner .partner-box-3 {
@@ -701,12 +727,6 @@ hr.small{
 }
 .partner .partner-box-4 {
   background: url(../images/partner/partner-4.png) no-repeat center center/contain;
-}
-.partner .partner-box-5 {
-  background: url(http://iambarcelonian.barcelonactiva.cat/wp-content/uploads/2014/09/logo-barcelona-activa-300x96.png) no-repeat center center/contain;
-}
-.partner .partner-box-6 {
-  background: url(../images/partner/partner-6.png) no-repeat center center/contain;
 }
 .partner .partner-box-7 {
   background: url(../images/partner/partner-7.png) no-repeat center center/contain;
@@ -815,6 +835,7 @@ hr.small{
   padding: 30px 0;
 }
 .site-footer .site-info {
+  font-size: 12px;
   font-weight: 400;
   margin-bottom: 10px;
 }
