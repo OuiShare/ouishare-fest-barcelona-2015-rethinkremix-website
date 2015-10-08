@@ -226,6 +226,10 @@ hr.small{
   text-align: center !important;
 }
 
+.for-who{
+  background: #f8f8f8;
+}
+
 /* 
  * 3.0 Helper Class
  */
@@ -590,7 +594,7 @@ hr.small{
  */
 
  .speakers{
-  background: #f8f8f8;
+  //background: #f8f8f8;
  }
 
 .speaker {
@@ -807,6 +811,7 @@ hr.small{
   table { 
     width: 90%; 
     margin: 0 auto;
+    max-width: 840px;
     border-collapse: collapse; 
   }
   /* Zebra striping */
@@ -816,13 +821,19 @@ hr.small{
   th { 
     background: #F79925; 
     color: white; 
-    font-weight: bold; 
+    font-size: 20px;
+    font-weight: bold;
     text-transform: uppercase;
   }
+
+  table .bg-orange{
+    background: #F79925;
+  }
+
   td, th { 
     padding: 6px; 
-    border: 1px solid #ccc; 
-    text-align: left; 
+    //border: 1px solid #f8f8f8; 
+    text-align: left;     
   }
 
 /* 
@@ -877,7 +888,8 @@ hr.small{
     /*
     Label the data
     */
-    td:before {content: attr(data-title) ": ";}
+    //td:before {content: attr(data-title) ": ";}
+    td:before {content: attr(data-title) " ";}
 
     
   }
