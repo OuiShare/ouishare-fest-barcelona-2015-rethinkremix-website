@@ -588,6 +588,11 @@ hr.small{
 /* 
  * 6.3 Section: Speaker
  */
+
+ .speakers{
+  background: #f8f8f8;
+ }
+
 .speaker {
   text-align: center;
   color: #313131;
@@ -623,11 +628,6 @@ hr.small{
 
 
 /* 
- * 6.4 Section: Registration & Pricing
- */
-
-
-/* 
  * 6.5 Section: Tickets
  */
 .tickets{
@@ -636,6 +636,12 @@ hr.small{
 
 .tickets img {
 	max-width: 300px;
+}
+
+.ticket{
+  background: #FFF;
+  margin-bottom: 10px;
+  padding: 20px 0;
 }
 
 /* 
@@ -734,8 +740,149 @@ hr.small{
 
 
 /* 
- * Section: Para quien
+ * Section: Program
  */
+
+
+.program{
+  background: #f8f8f8 none repeat scroll 0 0
+}
+
+//background: #F79925;
+
+
+@import "http://fonts.googleapis.com/css?family=Montserrat:300,400,700";
+.rwd-table {
+  margin: 1em 0;
+  min-width: 300px;
+}
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.rwd-table th {
+  display: none;
+}
+.rwd-table td {
+  display: block;
+}
+.rwd-table td:first-child {
+  padding-top: .5em;
+}
+.rwd-table td:last-child {
+  padding-bottom: .5em;
+}
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  .rwd-table td:before {
+    display: none;
+  }
+}
+.rwd-table th, .rwd-table td {
+  text-align: left;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child, .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child, .rwd-table td:last-child {
+    padding-right: 0;
+  }
+}
+
+
+
+  /* 
+  Generic Styling, for Desktops/Laptops 
+  */
+  table { 
+    width: 90%; 
+    margin: 0 auto;
+    border-collapse: collapse; 
+  }
+  /* Zebra striping */
+  tr:nth-of-type(odd) { 
+    background: #f8f8f8; 
+  }
+  th { 
+    background: #F79925; 
+    color: white; 
+    font-weight: bold; 
+    text-transform: uppercase;
+  }
+  td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+  }
+
+/* 
+  Max width before this PARTICULAR table gets nasty
+  This query will take effect for any screen smaller than 760px
+  and also iPads specifically.
+  */
+  @media 
+  only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+  
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr { 
+      display: block; 
+    }
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr { 
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    
+    tr { 
+      //border: 2px solid #f8f8f8;
+      margin-bottom: 4px;
+    }
+    
+    td { 
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 2px solid #f8f8f8; 
+      position: relative;
+      padding-left: 33%; 
+    }
+    
+    td:before { 
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */      
+      
+      background: #F79925;
+      height: 100%;
+      left: 0;
+      padding-left: 12px;
+      padding-top: 6px;
+      position: absolute;
+      top: 0;
+      width: 30%;
+    }
+    
+    /*
+    Label the data
+    */
+    td:before {content: attr(data-title) ": ";}
+
+    
+  }
+
+
 
 
 /* 

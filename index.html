@@ -493,22 +493,54 @@
     </section>
 
 
-<!--
-    <section id="contribution" class="section bg-image-2 contribution">
+	<section id="programacion" class="section">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h3 class="text-uppercase mt0 font-400">Envía tu propuesta</h3>
-                    
-                    <p>Si quieres participar con alguna propuesta; ¡adelante!</p>
-
-                    <a class="btn btn-red" href="#">Enviar una propuesta</a>
+                <div class="col-md-12 ">
+                    <h2 class="section-title">Programación</h2>
+                    <hr class="red short">
                 </div>
+            </div>
+            
+            <div class="row">
+				<table>
+            	<thead>
+            		<tr>
+            			<th>Bloque</th>
+            			<th>Quien</th>
+            			<th>Qué</th>	
+            		</tr>
+            	</thead>
+            	<tbody>
+            		<tr>						
+						<td data-title="Bloque">Where We Are: the Collaborative Age</td>
+						<td data-title="Quién" class="">Jaume Baró <small>BCN Activa</small></td>
+						<td data-title="Qué" class="">Formal welcoming</td>
+            		</tr>
+																		
+            		<tr>
+						<td data-title="Bloque">Where We Are: the Collaborative Age</td>
+						<td data-title="Quién" class="">Simone Cicero</td>
+						<td data-title="Qué" class="">Explanation of the structure of the day</td>
+            		</tr>
+
+            		<tr>
+						<td data-title="Bloque">Where We Are: the Collaborative Age</td>
+						<td data-title="Quién" class="">Albert Cañigueral</td>
+						<td data-title="Qué" class="">"Introducction to megatrends. Evolution of tech enablers social trends > user-peer-citizen producer"</td>
+            		</tr>
+
+            		<tr>
+						<td data-title="Bloque">Where We Are: the Collaborative Age</td>
+						<td data-title="Quién" class="">Lisa Gansky</td>
+						<td data-title="Qué" class="">"What Society wants and deserves" <small>Visionary talk on how companies are changing to cope with how society changes  #SocialOS </small></td>						
+            		</tr>
+            	            		
+            	</tbody>
+            </table>
             </div>
         </div>
     </section>
--->
-
 
     <section id="tickets" class="section tickets">
         <div class="container">
@@ -519,16 +551,22 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 text-center">
-                    	<figure>
+                <div class="col-sm-4 col-sm-offset-1 text-center ticket">
+                    <figure>
                      		<img alt="Tickets" class="img-responsive center-block" src="assets/images/tickets1.png">
 					</figure>
 					<br />
                     <a class="btn btn-orange" target="_blank" href="https://www.eventbrite.es/e/entradas-ouishare-business-experience-rethink-remix-18667604307">Compra tu entrada</a>
+                
+                <br>
+                <br>
+                
                 </div>
-                <div class="col-md-6 text-center">
-                    	<figure>
-                     		<img alt="Tickets" class="img-responsive center-block" src="assets/images/tickets2.png">
+
+
+                <div class="col-sm-4 col-sm-offset-2 text-center ticket">
+                    <figure>
+                    	<img alt="Tickets" class="img-responsive center-block" src="assets/images/tickets2.png">
 					</figure>
 					<br />
                     <a class="btn btn-orange" target="_blank" href="https://www.eventbrite.es/e/entradas-ouishare-business-experience-rethink-remix-18667604307">Compra tu entrada</a>
@@ -704,5 +742,14 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+    	$(".program-tabs a").click(function(){
+                $(this).tab('show');
+            });
+
+            $('[data-toggle="tooltip"]').tooltip();
+	</script>
+
 </body>
 </html>
